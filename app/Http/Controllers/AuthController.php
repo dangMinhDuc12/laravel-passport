@@ -153,4 +153,9 @@ class AuthController extends Controller
             'message' => 'Password Changed Successfully'
         ]);
     }
+
+    public function profile()
+    {
+        return Auth::user();
+    }
 }
